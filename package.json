@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cypress": "^13.6.1",
+    "mocha": "^10.4.0"
+  },
+  "name": "test-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "allure-commandline": "^2.27.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.7.0",
+    "cypress-xpath": "^2.0.1",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "outsystem": "npx cypress run --spec cypress/e2e/outsystems/mybank.cy.js ",
+    "frametest":"npx cypress run --spec cypress/e2e/Frames/frames.cy.js",
+    "alerts":"npx cypress run --spec cypress/e2e/Alerts/alerts.cy.js"
+  },
+  "author": "sherif",
+  "license": "ISC",
+  "description": ""
+}
